@@ -1,0 +1,271 @@
+;; -*- mode: emacs-lisp; coding: emacs-mule; -*-
+;; --------------------------------------------------------------------------
+;; Desktop File for Emacs
+;; --------------------------------------------------------------------------
+;; Created Tue Apr  9 19:20:49 2019
+;; Desktop file format version 208
+;; Emacs version 26.1
+
+;; Global section:
+(setq desktop-saved-frameset [frameset 1 (23724 54385 950922 434000) (desktop . "208") "simon@simmetopia" nil nil ((((minibuffer) (undecorated) (override-redirect) (font-backend xft x) (font-parameter . "Fira Code-13") (font . "-CTDB-Fira Code-normal-normal-normal-*-18-*-*-*-m-0-iso10646-1") (border-width . 0) (internal-border-width . 0) (right-divider-width . 0) (bottom-divider-width . 0) (vertical-scroll-bars) (horizontal-scroll-bars) (foreground-color . "#fdf4c1") (background-color . "#282828") (mouse-color . "black") (border-color . "black") (screen-gamma) (line-spacing) (left-fringe . 0) (right-fringe . 0) (no-special-glyphs) (scroll-bar-foreground . "#d8dee8") (scroll-bar-background . "#d8dee8") (menu-bar-lines . 0) (tool-bar-lines . 0) (title . "Ediff") (wait-for-wm . t) (tool-bar-position . top) (inhibit-double-buffering) (icon-type . t) (auto-raise . t) (auto-lower) (cursor-type . box) (scroll-bar-width . 0) (scroll-bar-height . 0) (alpha) (no-focus-on-map) (no-accept-focus) (fullscreen) (visibility . t) (skip-taskbar) (z-group) (scrollbar-width . 0) (scrollbar-height . 0) (display-type . color) (background-mode . dark) (cursor-color . "#fdf4c1") (icon-name . "Ediff _/1") (user-position . t) (sticky) (frameset--id . "BBE8-73ED-12C3-C3CC") (frameset--mini nil . "5FDF-E513-3BC0-0D27") (frameset--text-pixel-width . 952) (frameset--text-pixel-height . 1042) (height . 47) (width . 86) (modeline . t) (unsplittable) (left . 960) (top . 30) (display . ":0") (explicit-name . t)) ((min-height . 2) (min-width . 10) (min-height-ignore . 2) (min-width-ignore . 2) (min-height-safe . 1) (min-width-safe . 2) (min-pixel-height . 44) (min-pixel-width . 110) (min-pixel-height-ignore . 44) (min-pixel-width-ignore . 22) (min-pixel-height-safe . 22) (min-pixel-width-safe . 22)) leaf (last . t) (pixel-width . 952) (pixel-height . 1042) (total-width . 86) (total-height . 47) (normal-height . 1.0) (normal-width . 1.0) (buffer "*Ediff Control Panel*" (selected) (hscroll . 0) (fringes 0 0 nil) (margins nil) (scroll-bars nil 0 t nil 0 t) (vscroll . 0) (dedicated . t) (point . 17) (start . 1))) (((minibuffer . t) (undecorated) (override-redirect) (font-backend xft x) (font . "-CTDB-Fira Code-normal-normal-normal-*-18-*-*-*-m-0-iso10646-1") (font-parameter . "Fira Code-13") (border-width . 0) (internal-border-width . 0) (right-divider-width . 0) (bottom-divider-width . 0) (vertical-scroll-bars) (horizontal-scroll-bars) (foreground-color . "#fdf4c1") (background-color . "#282828") (mouse-color . "black") (border-color . "black") (screen-gamma) (line-spacing) (left-fringe . 8) (right-fringe . 8) (no-special-glyphs) (scroll-bar-foreground . "#d8dee8") (scroll-bar-background . "#d8dee8") (menu-bar-lines . 0) (tool-bar-lines . 0) (title) (wait-for-wm . t) (tool-bar-position . top) (inhibit-double-buffering) (icon-type . t) (auto-raise) (auto-lower) (cursor-type . box) (scroll-bar-width . 0) (scroll-bar-height . 0) (alpha) (no-focus-on-map) (no-accept-focus) (fullscreen) (visibility . t) (skip-taskbar) (z-group) (display-type . color) (background-mode . dark) (cursor-color . "#fdf4c1") (sticky) (environment) (frameset--id . "5FDF-E513-3BC0-0D27") (frameset--mini t . t) (modeline . t) (unsplittable) (icon-name) (display . ":0") (explicit-name) (lsp-ui-doc-buffer . "Unprintable entity") (frameset--text-pixel-width . 936) (frameset--text-pixel-height . 1042) (height . 47) (width . 85) (left . 0) (top . 30)) ((min-height . 4) (min-width . 10) (min-height-ignore . 2) (min-width-ignore . 4) (min-height-safe . 1) (min-width-safe . 2) (min-pixel-height . 88) (min-pixel-width . 110) (min-pixel-height-ignore . 44) (min-pixel-width-ignore . 44) (min-pixel-height-safe . 22) (min-pixel-width-safe . 22)) leaf (pixel-width . 952) (pixel-height . 1020) (total-width . 87) (total-height . 46) (normal-height . 1.0) (normal-width . 1.0) (buffer "ivy.el.~index~" (selected . t) (hscroll . 0) (fringes 8 8 nil) (margins nil) (scroll-bars nil 0 t nil 0 t) (vscroll . 0) (dedicated) (point . 18) (start . 1))))])
+(setq desktop-missing-file-warning nil)
+(setq tags-file-name nil)
+(setq tags-table-list nil)
+(setq search-ring nil)
+(setq regexp-search-ring '("some" "1122" "font" "evil-ma" "mag"))
+(setq register-alist '((113) (115) (48 . "(use-package company :ensure t)\n")))
+(setq file-name-history '("~/.emacs.d/init.el"))
+
+;; Buffer section -- buffers listed in same order as in buffer list:
+(desktop-create-buffer 208
+  "/home/simon/.emacs.d/ivy.el"
+  "ivy.el"
+  'emacs-lisp-mode
+  '(eldoc-mode override-global-mode undo-tree-mode helm-mode auto-revert-mode magit-file-mode projectile-mode)
+  7
+  '(20 nil)
+  nil
+  nil
+  '((buffer-display-time 23724 54369 793484 196000) (buffer-file-coding-system . prefer-utf-8-unix) (overwrite-mode))
+  '((mark-ring (20))))
+
+(desktop-create-buffer 208
+  "/home/simon/.emacs.d/keybinds.el"
+  "keybinds.el"
+  'emacs-lisp-mode
+  '(eldoc-mode override-global-mode undo-tree-mode helm-mode auto-revert-mode magit-file-mode projectile-mode)
+  55
+  '(1 nil)
+  nil
+  nil
+  '((buffer-display-time 23724 54279 536174 141000) (buffer-file-coding-system . prefer-utf-8-unix) (overwrite-mode))
+  '((mark-ring (1))))
+
+(desktop-create-buffer 208
+  "/home/simon/.emacs.d/init.el"
+  "init.el"
+  'emacs-lisp-mode
+  '(eldoc-mode override-global-mode undo-tree-mode helm-mode auto-revert-mode magit-file-mode projectile-mode)
+  2373
+  '(2373 nil)
+  nil
+  nil
+  '((buffer-display-time 23724 54202 697795 980000) (buffer-file-coding-system . prefer-utf-8-unix) (overwrite-mode))
+  '((mark-ring (2373 2506 2357 355 2289 2235 694 2103 2104 1445 1371 1207 1370 763 1205 763))))
+
+(desktop-create-buffer 208
+  nil
+  ".emacs.d"
+  'dired-mode
+  '(override-global-mode helm-mode projectile-mode)
+  510
+  '(nil nil)
+  t
+  '("/home/simon/.emacs.d/")
+  '((buffer-display-time 23724 54107 818370 463000) (overwrite-mode))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/home/simon/brandheroes/brandheroes-webapp-v2/src/views/common/campaign/submission/MediumCampaignSubmission.tsx"
+  "MediumCampaignSubmission.tsx"
+  'typescript-tsx-mode
+  '(eldoc-mode override-global-mode company-mode flymake-mode lsp-mode undo-tree-mode helm-mode auto-revert-mode magit-file-mode projectile-mode)
+  2794
+  '(2794 nil)
+  nil
+  nil
+  '((buffer-display-time 23724 53282 366015 921000) (buffer-file-coding-system . undecided-unix) (overwrite-mode))
+  '((mark-ring (2793 1881))))
+
+(desktop-create-buffer 208
+  "/home/simon/brandheroes/brandheroes-webapp-v2/src/App.tsx"
+  "App.tsx"
+  'typescript-tsx-mode
+  '(eldoc-mode override-global-mode company-mode flymake-mode lsp-mode undo-tree-mode helm-mode auto-revert-mode magit-file-mode projectile-mode)
+  1386
+  '(1517 nil)
+  nil
+  nil
+  '((buffer-display-time 23724 53135 445143 359000) (buffer-file-coding-system . undecided-unix) (overwrite-mode))
+  '((mark-ring (1517 1518))))
+
+(desktop-create-buffer 208
+  nil
+  "src"
+  'dired-mode
+  '(override-global-mode helm-mode projectile-mode)
+  252
+  '(nil nil)
+  t
+  '("/home/simon/brandheroes/brandheroes-webapp-v2/src/")
+  '((buffer-display-time 23724 53105 915874 968000) (overwrite-mode))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/home/simon/brandheroes/brandheroes-webapp-v2/README.md"
+  "README.md"
+  'markdown-mode
+  '(eldoc-mode override-global-mode undo-tree-mode helm-mode auto-revert-mode magit-file-mode projectile-mode)
+  1052
+  '(1052 nil)
+  nil
+  nil
+  '((tab-width . 4) (buffer-display-time 23724 53105 117845 648000) (buffer-file-coding-system . undecided-unix) (overwrite-mode))
+  '((mark-ring (1054 922 1))))
+
+(desktop-create-buffer 208
+  nil
+  "brandheroes-webapp-v2"
+  'dired-mode
+  '(override-global-mode helm-mode projectile-mode)
+  1398
+  '(nil nil)
+  t
+  '("/home/simon/brandheroes/brandheroes-webapp-v2/")
+  '((buffer-display-time 23724 52786 338929 230000) (overwrite-mode))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/home/simon/documentation/brandheroes/0409.org"
+  "0409.org"
+  'org-mode
+  '(override-global-mode undo-tree-mode helm-mode magit-file-mode projectile-mode)
+  199
+  '(199 nil)
+  nil
+  nil
+  '((buffer-display-time 23724 52782 833865 924000) (buffer-file-coding-system . undecided-unix) (overwrite-mode) (truncate-lines . t))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/home/simon/brandheroes/brandheroes-webapp-v2/src/views/user/detail/Fragments.gql.ts"
+  "Fragments.gql.ts"
+  'typescript-mode
+  '(eldoc-mode override-global-mode company-mode flymake-mode lsp-mode undo-tree-mode helm-mode auto-revert-mode magit-file-mode projectile-mode)
+  3204
+  '(3204 nil)
+  nil
+  nil
+  '((buffer-display-time 23724 52751 391368 336000) (buffer-file-coding-system . undecided-unix) (overwrite-mode))
+  '((mark-ring (3205 988))))
+
+(desktop-create-buffer 208
+  "/home/simon/brandheroes/brandheroes-webapp-v2/package.json"
+  "package.json"
+  'js-mode
+  '(override-global-mode undo-tree-mode helm-mode auto-revert-mode magit-file-mode projectile-mode)
+  4247
+  '(4247 nil)
+  nil
+  nil
+  '((buffer-display-time 23724 52552 28194 167000) (buffer-file-coding-system . undecided-unix) (overwrite-mode))
+  '((mark-ring (4248 2864 3614 3613 4217 4204 4211 4212 4277 4175 4144 4145 4270 4177 4177 4177))))
+
+(desktop-create-buffer 208
+  "/home/simon/brandheroes/brandheroes-webapp-v2/src/views/user/detail/MediumUserDetail.tsx"
+  "MediumUserDetail.tsx"
+  'typescript-tsx-mode
+  '(eldoc-mode override-global-mode company-mode flymake-mode lsp-mode undo-tree-mode helm-mode auto-revert-mode magit-file-mode projectile-mode)
+  2684
+  '(nil nil)
+  nil
+  nil
+  '((buffer-display-time 23724 52458 924946 747000) (buffer-file-coding-system . undecided-unix) (overwrite-mode))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/home/simon/brandheroes/brandheroes-webapp-v2/src/views/user/detail/SmallUserDetailSoMe.tsx"
+  "SmallUserDetailSoMe.tsx"
+  'typescript-tsx-mode
+  '(eldoc-mode override-global-mode company-mode flymake-mode lsp-mode undo-tree-mode helm-mode auto-revert-mode magit-file-mode projectile-mode)
+  554
+  '(nil nil)
+  nil
+  nil
+  '((buffer-display-time 23724 52435 699157 292000) (buffer-file-coding-system . undecided-unix) (overwrite-mode))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/home/simon/brandheroes/brandheroes-webapp-v2/src/views/common/campaign/draft/brief/CampaignDraftInfluencerBrief.tsx"
+  "CampaignDraftInfluencerBrief.tsx"
+  'typescript-tsx-mode
+  '(eldoc-mode override-global-mode company-mode flymake-mode lsp-mode undo-tree-mode helm-mode auto-revert-mode magit-file-mode projectile-mode)
+  1592
+  '(1592 nil)
+  nil
+  nil
+  '((buffer-display-time 23724 49552 541467 341000) (buffer-file-coding-system . undecided-unix) (overwrite-mode))
+  '((mark-ring (1591))))
+
+(desktop-create-buffer 208
+  "/home/simon/brandheroes/brandheroes-webapp-v2/src/localState/clientSchema.graphql"
+  "clientSchema.graphql"
+  'fundamental-mode
+  '(override-global-mode undo-tree-mode helm-mode auto-revert-mode magit-file-mode projectile-mode)
+  579
+  '(318 nil)
+  nil
+  nil
+  '((buffer-display-time 23724 49294 52989 84000) (buffer-file-coding-system . undecided-unix) (overwrite-mode))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  nil
+  "localState"
+  'dired-mode
+  '(override-global-mode helm-mode projectile-mode)
+  368
+  '(nil nil)
+  t
+  '("/home/simon/brandheroes/brandheroes-webapp-v2/src/localState/")
+  '((buffer-display-time 23724 49230 563567 885000) (overwrite-mode))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/home/simon/brandheroes/brandheroes-webapp-v2/src/index.tsx"
+  "index.tsx"
+  'typescript-tsx-mode
+  '(eldoc-mode override-global-mode company-mode flymake-mode lsp-mode undo-tree-mode helm-mode auto-revert-mode magit-file-mode projectile-mode flycheck-mode)
+  3839
+  '(3839 nil)
+  nil
+  nil
+  '((buffer-display-time 23724 48370 606754 390000) (buffer-file-coding-system . undecided-unix) (overwrite-mode))
+  '((mark-ring (3840 4369 4382))))
+
+(desktop-create-buffer 208
+  nil
+  "prepare"
+  'dired-mode
+  '(override-global-mode helm-mode projectile-mode)
+  214
+  '(nil nil)
+  t
+  '("/home/simon/brandheroes/brandheroes-webapp-v2/src/views/kpi/prepare/")
+  '((buffer-display-time 23724 47237 818465 717000) (overwrite-mode))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  nil
+  "kpi"
+  'dired-mode
+  '(override-global-mode helm-mode projectile-mode)
+  741
+  '(nil nil)
+  t
+  '("/home/simon/brandheroes/brandheroes-webapp-v2/src/views/kpi/")
+  '((buffer-display-time 23724 47237 314073 720000) (overwrite-mode))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  nil
+  "views"
+  'dired-mode
+  '(override-global-mode helm-mode projectile-mode)
+  202
+  '(nil nil)
+  t
+  '("/home/simon/brandheroes/brandheroes-webapp-v2/src/views/")
+  '((buffer-display-time 23724 54100 214306 419000) (overwrite-mode))
+  '((mark-ring nil)))
+
