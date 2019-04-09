@@ -2,21 +2,57 @@
 ;; --------------------------------------------------------------------------
 ;; Desktop File for Emacs
 ;; --------------------------------------------------------------------------
-;; Created Tue Apr  9 19:47:03 2019
+;; Created Tue Apr  9 20:01:48 2019
 ;; Desktop file format version 208
 ;; Emacs version 26.1
 
 ;; Global section:
-(setq desktop-saved-frameset [frameset 1 (23724 55959 844422 581000) (desktop . "208") "simon@simmetopia" nil nil ((((minibuffer . t) (undecorated) (override-redirect) (font-backend xft x) (font . "-CTDB-Fira Code-normal-normal-normal-*-18-*-*-*-m-0-iso10646-1") (font-parameter . "Fira Code-13") (border-width . 0) (internal-border-width . 0) (right-divider-width . 0) (bottom-divider-width . 0) (vertical-scroll-bars) (horizontal-scroll-bars) (foreground-color . "#fdf4c1") (background-color . "#282828") (mouse-color . "black") (border-color . "black") (screen-gamma) (line-spacing) (left-fringe . 8) (right-fringe . 8) (no-special-glyphs) (scroll-bar-foreground . "#d8dee8") (scroll-bar-background . "#d8dee8") (menu-bar-lines . 0) (tool-bar-lines . 0) (title) (wait-for-wm . t) (tool-bar-position . top) (inhibit-double-buffering) (icon-type . t) (auto-raise) (auto-lower) (cursor-type . box) (scroll-bar-width . 0) (scroll-bar-height . 0) (alpha) (no-focus-on-map) (no-accept-focus) (fullscreen) (visibility . t) (skip-taskbar) (z-group) (display-type . color) (background-mode . dark) (cursor-color . "#fdf4c1") (sticky) (environment) (frameset--id . "5FDF-E513-3BC0-0D27") (frameset--mini t . t) (modeline . t) (unsplittable) (icon-name) (display . ":0") (explicit-name) (lsp-ui-doc-buffer . "Unprintable entity") (frameset--text-pixel-width . 1880) (frameset--text-pixel-height . 1042) (height . 47) (width . 170) (left . 0) (top . 30)) ((min-height . 4) (min-width . 20) (min-height-ignore . 2) (min-width-ignore . 8) (min-height-safe . 1) (min-width-safe . 4) (min-pixel-height . 88) (min-pixel-width . 220) (min-pixel-height-ignore . 44) (min-pixel-width-ignore . 88) (min-pixel-height-safe . 22) (min-pixel-width-safe . 44)) hc (pixel-width . 1896) (pixel-height . 1020) (total-width . 172) (total-height . 46) (normal-height . 1.0) (normal-width . 1.0) (combination-limit) (leaf (pixel-width . 950) (pixel-height . 1020) (total-width . 86) (total-height . 46) (normal-height . 1.0) (normal-width . 0.5) (buffer "init.el" (selected) (hscroll . 0) (fringes 8 8 nil) (margins nil) (scroll-bars nil 0 t nil 0 t) (vscroll . 0) (dedicated) (point . 2373) (start . 1693))) (leaf (last . t) (pixel-width . 946) (pixel-height . 1020) (total-width . 86) (total-height . 46) (normal-height . 1.0) (normal-width . 0.5) (buffer "magit: .emacs.d" (selected . t) (hscroll . 0) (fringes 8 8 nil) (margins nil) (scroll-bars nil 0 t nil 0 t) (vscroll . 0) (dedicated) (point . 61) (start . 1)))))])
+(setq desktop-saved-frameset [frameset 1 (23724 56844 562937 15000) (desktop . "208") "simon@simmetopia" nil nil ((((minibuffer . t) (undecorated) (override-redirect) (font-backend xft x) (font . "-CTDB-Fira Code-normal-normal-normal-*-18-*-*-*-m-0-iso10646-1") (font-parameter . "Fira Code-13") (border-width . 0) (internal-border-width . 0) (right-divider-width . 0) (bottom-divider-width . 0) (vertical-scroll-bars) (horizontal-scroll-bars) (foreground-color . "#fdf4c1") (background-color . "#282828") (mouse-color . "black") (border-color . "black") (screen-gamma) (line-spacing) (left-fringe . 8) (right-fringe . 8) (no-special-glyphs) (scroll-bar-foreground . "#d8dee8") (scroll-bar-background . "#d8dee8") (menu-bar-lines . 0) (tool-bar-lines . 0) (title) (wait-for-wm . t) (tool-bar-position . top) (inhibit-double-buffering) (icon-type . t) (auto-raise) (auto-lower) (cursor-type . box) (scroll-bar-width . 0) (scroll-bar-height . 0) (alpha) (no-focus-on-map) (no-accept-focus) (fullscreen) (visibility . t) (skip-taskbar) (z-group) (display-type . color) (background-mode . dark) (cursor-color . "#fdf4c1") (sticky) (environment) (frameset--id . "5FDF-E513-3BC0-0D27") (frameset--mini t . t) (modeline . t) (unsplittable) (icon-name) (display . ":0") (explicit-name) (lsp-ui-doc-buffer . "Unprintable entity") (frameset--text-pixel-width . 1880) (frameset--text-pixel-height . 1042) (height . 47) (width . 170) (left . 0) (top . 30)) ((min-height . 4) (min-width . 20) (min-height-ignore . 2) (min-width-ignore . 8) (min-height-safe . 1) (min-width-safe . 4) (min-pixel-height . 88) (min-pixel-width . 220) (min-pixel-height-ignore . 44) (min-pixel-width-ignore . 88) (min-pixel-height-safe . 22) (min-pixel-width-safe . 44)) hc (pixel-width . 1896) (pixel-height . 1020) (total-width . 211) (total-height . 46) (normal-height . 1.0) (normal-width . 1.0) (combination-limit) (leaf (pixel-width . 951) (pixel-height . 1020) (total-width . 106) (total-height . 46) (normal-height . 1.0) (normal-width . 0.5) (buffer "keybinds.el" (selected . t) (hscroll . 0) (fringes 8 8 nil) (margins nil) (scroll-bars nil 0 t nil 0 t) (vscroll . 0) (dedicated) (point . 81) (start . 1))) (leaf (last . t) (pixel-width . 945) (pixel-height . 1020) (total-width . 105) (total-height . 46) (normal-height . 1.0) (normal-width . 0.5) (buffer "*Warnings*" (selected) (hscroll . 0) (fringes 8 8 nil) (margins nil) (scroll-bars nil 0 t nil 0 t) (vscroll . 0) (dedicated) (point . 344) (start . 1)))))])
 (setq desktop-missing-file-warning nil)
 (setq tags-file-name nil)
 (setq tags-table-list nil)
 (setq search-ring nil)
 (setq regexp-search-ring '("some" "1122" "font" "evil-ma" "mag"))
-(setq register-alist '((113) (115) (48 . "(global-set-key (kbd \", f\") 'projectile-find-file )\n")))
+(setq register-alist '((113) (115) (48 . "(global-set-key (kbd \"C-c f\") 'projectile-find-file )\n")))
 (setq file-name-history '("~/.emacs.d/init.el"))
 
 ;; Buffer section -- buffers listed in same order as in buffer list:
+(desktop-create-buffer 208
+  "/home/simon/.emacs.d/keybinds.el"
+  "keybinds.el"
+  'emacs-lisp-mode
+  '(eldoc-mode override-global-mode undo-tree-mode helm-mode auto-revert-mode magit-file-mode projectile-mode)
+  81
+  '(81 nil)
+  nil
+  nil
+  '((buffer-display-time 23724 56842 414733 465000) (buffer-file-coding-system . prefer-utf-8-unix) (overwrite-mode))
+  '((mark-ring (99 54))))
+
+(desktop-create-buffer 208
+  "/home/simon/.emacs.d/init.el"
+  "init.el"
+  'emacs-lisp-mode
+  '(eldoc-mode override-global-mode undo-tree-mode helm-mode auto-revert-mode magit-file-mode projectile-mode)
+  2431
+  '(2431 nil)
+  nil
+  nil
+  '((buffer-display-time 23724 56833 394991 719000) (buffer-file-coding-system . prefer-utf-8-unix) (overwrite-mode))
+  '((mark-ring (2431 2376 2408 2541 2392 355 2289 2235 694 2103 2104 1445 1371 1207 1370 763))))
+
+(desktop-create-buffer 208
+  "/home/simon/.emacs.d/dank.ts"
+  "dank.ts"
+  'typescript-mode
+  '(eldoc-mode override-global-mode company-mode flymake-mode lsp-mode undo-tree-mode helm-mode magit-file-mode projectile-mode)
+  73
+  '(73 nil)
+  nil
+  nil
+  '((buffer-display-time 23724 56826 382929 165000) (buffer-file-coding-system . utf-8-unix) (overwrite-mode))
+  '((mark-ring nil)))
+
 (desktop-create-buffer 208
   "/home/simon/.emacs.d/projectile-bookmarks.eld"
   "projectile-bookmarks.eld"
@@ -26,32 +62,8 @@
   '(nil nil)
   nil
   nil
-  '((buffer-display-time 23724 54857 301033 309000) (overwrite-mode))
+  '((buffer-display-time 23724 56338 651151 613000) (overwrite-mode))
   '((mark-ring nil)))
-
-(desktop-create-buffer 208
-  "/home/simon/.emacs.d/init.el"
-  "init.el"
-  'emacs-lisp-mode
-  '(eldoc-mode override-global-mode undo-tree-mode helm-mode auto-revert-mode magit-file-mode projectile-mode)
-  2373
-  '(2373 nil)
-  nil
-  nil
-  '((buffer-display-time 23724 54870 621122 897000) (buffer-file-coding-system . prefer-utf-8-unix) (overwrite-mode))
-  '((mark-ring (2373 2506 2357 355 2289 2235 694 2103 2104 1445 1371 1207 1370 763 1205 763))))
-
-(desktop-create-buffer 208
-  "/home/simon/.emacs.d/keybinds.el"
-  "keybinds.el"
-  'emacs-lisp-mode
-  '(eldoc-mode override-global-mode undo-tree-mode helm-mode auto-revert-mode magit-file-mode projectile-mode)
-  25
-  '(1 nil)
-  nil
-  nil
-  '((buffer-display-time 23724 54766 694983 783000) (buffer-file-coding-system . prefer-utf-8-unix) (overwrite-mode))
-  '((mark-ring (54))))
 
 (desktop-create-buffer 208
   "/home/simon/.emacs.d/.gitignore"
@@ -62,7 +74,7 @@
   '(38 nil)
   nil
   nil
-  '((buffer-display-time 23724 54583 8227 634000) (buffer-file-coding-system . utf-8-unix) (overwrite-mode))
+  '((buffer-display-time 23724 54604 673627 229000) (buffer-file-coding-system . utf-8-unix) (overwrite-mode))
   '((mark-ring (37 29))))
 
 (desktop-create-buffer 208
@@ -74,7 +86,7 @@
   '(nil nil)
   t
   nil
-  '((buffer-display-time 23724 54468 55284 126000) (buffer-file-coding-system . undecided-unix) (overwrite-mode))
+  '((buffer-display-time 23724 54489 852702 213000) (buffer-file-coding-system . undecided-unix) (overwrite-mode))
   '((mark-ring nil)))
 
 (desktop-create-buffer 208
@@ -86,7 +98,7 @@
   '(nil nil)
   t
   '("/home/simon/.emacs.d/")
-  '((buffer-display-time 23724 54420 594177 382000) (overwrite-mode))
+  '((buffer-display-time 23724 54442 490872 95000) (overwrite-mode))
   '((mark-ring nil)))
 
 (desktop-create-buffer 208
@@ -98,7 +110,7 @@
   '(202 nil)
   t
   '("/home/simon/brandheroes/brandheroes-webapp-v2/src/views/")
-  '((buffer-display-time 23724 54410 503665 639000) (overwrite-mode))
+  '((buffer-display-time 23724 54432 496715 196000) (overwrite-mode))
   '((mark-ring nil)))
 
 (desktop-create-buffer 208
@@ -110,7 +122,7 @@
   '(2794 nil)
   nil
   nil
-  '((buffer-display-time 23724 53300 969114 48000) (buffer-file-coding-system . undecided-unix) (overwrite-mode))
+  '((buffer-display-time 23724 53323 856035 256000) (buffer-file-coding-system . undecided-unix) (overwrite-mode))
   '((mark-ring (2793 1881))))
 
 (desktop-create-buffer 208
@@ -122,7 +134,7 @@
   '(1517 nil)
   nil
   nil
-  '((buffer-display-time 23724 53154 176073 592000) (buffer-file-coding-system . undecided-unix) (overwrite-mode))
+  '((buffer-display-time 23724 53177 371332 655000) (buffer-file-coding-system . undecided-unix) (overwrite-mode))
   '((mark-ring (1517 1518))))
 
 (desktop-create-buffer 208
@@ -134,7 +146,7 @@
   '(nil nil)
   t
   '("/home/simon/brandheroes/brandheroes-webapp-v2/src/")
-  '((buffer-display-time 23724 53124 702889 508000) (overwrite-mode))
+  '((buffer-display-time 23724 53148 27044 414000) (overwrite-mode))
   '((mark-ring nil)))
 
 (desktop-create-buffer 208
@@ -146,7 +158,7 @@
   '(1052 nil)
   nil
   nil
-  '((tab-width . 4) (buffer-display-time 23724 53124 105722 353000) (buffer-file-coding-system . undecided-unix) (overwrite-mode))
+  '((tab-width . 4) (buffer-display-time 23724 53147 567189 937000) (buffer-file-coding-system . undecided-unix) (overwrite-mode))
   '((mark-ring (1054 922 1))))
 
 (desktop-create-buffer 208
@@ -158,7 +170,7 @@
   '(nil nil)
   t
   '("/home/simon/brandheroes/brandheroes-webapp-v2/")
-  '((buffer-display-time 23724 52805 384522 675000) (overwrite-mode))
+  '((buffer-display-time 23724 52828 978167 750000) (overwrite-mode))
   '((mark-ring nil)))
 
 (desktop-create-buffer 208
@@ -170,7 +182,7 @@
   '(199 nil)
   nil
   nil
-  '((buffer-display-time 23724 52802 612782 21000) (buffer-file-coding-system . undecided-unix) (overwrite-mode) (truncate-lines . t))
+  '((buffer-display-time 23724 52827 296384 919000) (buffer-file-coding-system . undecided-unix) (overwrite-mode) (truncate-lines . t))
   '((mark-ring nil)))
 
 (desktop-create-buffer 208
@@ -182,7 +194,7 @@
   '(3204 nil)
   nil
   nil
-  '((buffer-display-time 23724 52771 391118 408000) (buffer-file-coding-system . undecided-unix) (overwrite-mode))
+  '((buffer-display-time 23724 52796 226482 934000) (buffer-file-coding-system . undecided-unix) (overwrite-mode))
   '((mark-ring (3205 988))))
 
 (desktop-create-buffer 208
@@ -194,7 +206,7 @@
   '(4247 nil)
   nil
   nil
-  '((buffer-display-time 23724 52572 265373 470000) (buffer-file-coding-system . undecided-unix) (overwrite-mode))
+  '((buffer-display-time 23724 52597 403343 525000) (buffer-file-coding-system . undecided-unix) (overwrite-mode))
   '((mark-ring (4248 2864 3614 3613 4217 4204 4211 4212 4277 4175 4144 4145 4270 4177 4177 4177))))
 
 (desktop-create-buffer 208
@@ -206,7 +218,7 @@
   '(nil nil)
   nil
   nil
-  '((buffer-display-time 23724 52479 341480 298000) (buffer-file-coding-system . undecided-unix) (overwrite-mode))
+  '((buffer-display-time 23724 52504 728458 911000) (buffer-file-coding-system . undecided-unix) (overwrite-mode))
   '((mark-ring nil)))
 
 (desktop-create-buffer 208
@@ -218,7 +230,7 @@
   '(nil nil)
   nil
   nil
-  '((buffer-display-time 23724 52456 261976 98000) (buffer-file-coding-system . undecided-unix) (overwrite-mode))
+  '((buffer-display-time 23724 52481 987793 380000) (buffer-file-coding-system . undecided-unix) (overwrite-mode))
   '((mark-ring nil)))
 
 (desktop-create-buffer 208
@@ -230,7 +242,7 @@
   '(1592 nil)
   nil
   nil
-  '((buffer-display-time 23724 49573 468837 371000) (buffer-file-coding-system . undecided-unix) (overwrite-mode))
+  '((buffer-display-time 23724 49599 591656 480000) (buffer-file-coding-system . undecided-unix) (overwrite-mode))
   '((mark-ring (1591))))
 
 (desktop-create-buffer 208
@@ -242,7 +254,7 @@
   '(318 nil)
   nil
   nil
-  '((buffer-display-time 23724 49315 68656 514000) (buffer-file-coding-system . undecided-unix) (overwrite-mode))
+  '((buffer-display-time 23724 49341 307515 641000) (buffer-file-coding-system . undecided-unix) (overwrite-mode))
   '((mark-ring nil)))
 
 (desktop-create-buffer 208
@@ -254,7 +266,7 @@
   '(nil nil)
   t
   '("/home/simon/brandheroes/brandheroes-webapp-v2/src/localState/")
-  '((buffer-display-time 23724 49251 635209 452000) (overwrite-mode))
+  '((buffer-display-time 23724 49277 950792 283000) (overwrite-mode))
   '((mark-ring nil)))
 
 (desktop-create-buffer 208
@@ -266,7 +278,7 @@
   '(3839 nil)
   nil
   nil
-  '((buffer-display-time 23724 48391 901887 504000) (buffer-file-coding-system . undecided-unix) (overwrite-mode))
+  '((buffer-display-time 23724 48418 517554 207000) (buffer-file-coding-system . undecided-unix) (overwrite-mode))
   '((mark-ring (3840 4369 4382))))
 
 (desktop-create-buffer 208
@@ -278,7 +290,7 @@
   '(nil nil)
   t
   '("/home/simon/brandheroes/brandheroes-webapp-v2/src/views/kpi/prepare/")
-  '((buffer-display-time 23724 47259 166546 22000) (overwrite-mode))
+  '((buffer-display-time 23724 47285 859180 592000) (overwrite-mode))
   '((mark-ring nil)))
 
 (desktop-create-buffer 208
@@ -290,6 +302,6 @@
   '(nil nil)
   t
   '("/home/simon/brandheroes/brandheroes-webapp-v2/src/views/kpi/")
-  '((buffer-display-time 23724 54764 741525 118000) (overwrite-mode))
+  '((buffer-display-time 23724 56796 182247 574000) (overwrite-mode))
   '((mark-ring nil)))
 

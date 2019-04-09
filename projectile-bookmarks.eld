@@ -1,1 +1,1 @@
-("~/.emacs.d/" "~/brandheroes/brandheroes-webapp-v2/" "~/")
+("~/brandheroes/brandheroes-webapp-v2/" "~/" "~/.emacs.d/")
