@@ -74,7 +74,7 @@
 (use-package projectile :ensure t)
 (projectile-mode 1)
 (use-package counsel :ensure t)
-
+(use-package prettier-js :ensure t)
 ;; load keybinds
 (load "~/.emacs.d/keybinds.el")
 
