@@ -28,13 +28,12 @@
 (use-package lsp-mode
   :ensure t
   :commands lsp
+  :init (lsp)
   :config
   (require 'lsp-clients)
   (add-hook 'typescript-mode-hook 'lsp) ;; for typescript support
   (add-hook 'typescript-tsx-mode-hook 'lsp) ;; for typescript support
 )
-(lsp 1)
-(desktop-save-mode 1)
 
 (use-package lsp-ui
   :ensure t
@@ -71,15 +70,7 @@
 (use-package gruvbox-theme
   :ensure t
   :config
-  (load-theme 'gruvbox t)
-  (let ((line (face-attribute 'mode-line :underline)))
-    (set-face-attribute 'mode-line          nil :overline   line)
-    (set-face-attribute 'mode-line-inactive nil :overline   line)
-    (set-face-attribute 'mode-line-inactive nil :underline  line)
-    (set-face-attribute 'mode-line          nil :box        nil)
-    (set-face-attribute 'mode-line-inactive nil :box        nil)
-    (set-face-attribute 'mode-line-inactive nil :background "#f9f2d9"))) 
-
+  (load-theme 'gruvbox t))
 (use-package minions
   :ensure t
   :init (minions-mode)
