@@ -78,18 +78,19 @@
     (set-face-attribute 'mode-line-inactive nil :underline  line)
     (set-face-attribute 'mode-line          nil :box        nil)
     (set-face-attribute 'mode-line-inactive nil :box        nil)
-    (set-face-attribute 'mode-line-inactive nil :background "#f9f2d9"))
-  )
+    (set-face-attribute 'mode-line-inactive nil :background "#f9f2d9"))) 
+
+(use-package minions
+  :ensure t
+  :init (minions-mode)
+  :config
+  (validate-setq
+   minions-mode-line-lighter "#"))
 (use-package moody
   :ensure t
   :config
-  (setq x-underline-at-descent-line t)
   (moody-replace-mode-line-buffer-identification)
   (moody-replace-vc-mode))
-(use-package minions
-  :ensure t
-  :config
-  (minions-mode 1))
 (use-package magit :ensure t)
 (use-package projectile
   :ensure t
