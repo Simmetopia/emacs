@@ -68,11 +68,34 @@
 (use-package helm :ensure t)
 (helm-mode 1)
 (global-set-key (kbd "M-x") 'helm-M-x)
-(use-package gruvbox-theme :ensure t)
-(load-theme 'gruvbox t)
+(use-package gruvbox-theme
+  :ensure t
+  :config
+  (load-theme 'gruvbox t)
+  (let ((line (face-attribute 'mode-line :underline)))
+    (set-face-attribute 'mode-line          nil :overline   line)
+    (set-face-attribute 'mode-line-inactive nil :overline   line)
+    (set-face-attribute 'mode-line-inactive nil :underline  line)
+    (set-face-attribute 'mode-line          nil :box        nil)
+    (set-face-attribute 'mode-line-inactive nil :box        nil)
+    (set-face-attribute 'mode-line-inactive nil :background "#f9f2d9"))
+  )
+(use-package moody
+  :ensure t
+  :config
+  (setq x-underline-at-descent-line t)
+  (moody-replace-mode-line-buffer-identification)
+  (moody-replace-vc-mode))
+(use-package minions
+  :ensure t
+  :config
+  (minions-mode 1))
 (use-package magit :ensure t)
-(use-package projectile :ensure t)
-(projectile-mode 1)
+(use-package projectile
+  :ensure t
+  :config
+  (projectile-mode 1))
+  
 (use-package counsel :ensure t)
 (use-package prettier-js :ensure t)
 ;; load keybinds
