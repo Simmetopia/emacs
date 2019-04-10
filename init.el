@@ -10,7 +10,9 @@
 (toggle-scroll-bar -1) 
 (tool-bar-mode -1) 
 (add-to-list 'default-frame-alist
-                       '(font . "Fira Code-13"))
+                       '(font . "Hack-14"))
+(setq-default line-spacing 5)
+(display-line-numbers-mode 1)
 (unless (package-installed-p 'use-package)
   (package-refresh-contents)
   (package-install 'use-package))
@@ -75,8 +77,7 @@
   :ensure t
   :init (minions-mode)
   :config
-  (validate-setq
-   minions-mode-line-lighter "#"))
+  (setq minions-mode-line-lighter "#"))
 (use-package moody
   :ensure t
   :config

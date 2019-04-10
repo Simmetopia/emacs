@@ -4,8 +4,3 @@
 
 
 
-(global-set-key (kbd "C-x ld") 'lsp-goto-type-definition )
-(global-set-key (kbd "C-x lf") 'lsp-find-definition )
-
-
-
