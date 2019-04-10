@@ -69,10 +69,16 @@
 (use-package helm :ensure t)
 (helm-mode 1)
 (global-set-key (kbd "M-x") 'helm-M-x)
-(use-package gruvbox-theme
-  :ensure t
+(use-package solarized-theme
   :config
-  (load-theme 'gruvbox t))
+  (load-theme 'solarized-light t)
+  (let ((line (face-attribute 'mode-line :underline)))
+    (set-face-attribute 'mode-line          nil :overline   line)
+    (set-face-attribute 'mode-line-inactive nil :overline   line)
+    (set-face-attribute 'mode-line-inactive nil :underline  line)
+    (set-face-attribute 'mode-line          nil :box        nil)
+    (set-face-attribute 'mode-line-inactive nil :box        nil)
+    (set-face-attribute 'mode-line-inactive nil :background "#f9f2d9")))
 (use-package minions
   :ensure t
   :init (minions-mode)
