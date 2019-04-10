@@ -1,4 +1,6 @@
 elpa
+desktop*
+*.lock
 auto-save-list
 transient
 /**/#*
