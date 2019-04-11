@@ -12,7 +12,6 @@
 (add-to-list 'default-frame-alist
                        '(font . "Hack-14"))
 (setq-default line-spacing 5)
-(display-line-numbers-mode 1)
 (unless (package-installed-p 'use-package)
   (package-refresh-contents)
   (package-install 'use-package))
@@ -63,15 +62,20 @@
   (setq-default js2-ignored-warnings '("msg.extra.trailing.comma"
                                        "msg.missing.semi"
                                        "msg.no.side.effects")))
+
 (use-package evil :ensure t)
 (evil-mode 1)
-(use-package org :ensure t)
+(use-package org
+  :ensure t
+  :init (org-indent-mode)
+  )
 (use-package helm :ensure t)
 (helm-mode 1)
 (global-set-key (kbd "M-x") 'helm-M-x)
-(use-package solarized-theme
+(use-package gruvbox-theme 
+  :ensure t
   :config
-  (load-theme 'solarized-light t)
+  (load-theme 'gruvbox-dark-soft t)
   (let ((line (face-attribute 'mode-line :underline)))
     (set-face-attribute 'mode-line          nil :overline   line)
     (set-face-attribute 'mode-line-inactive nil :overline   line)
@@ -100,14 +104,19 @@
 ;; load keybinds
 (load "~/.emacs.d/keybinds.el")
 
+(display-line-numbers-mode 1)
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
+ '(inhibit-startup-screen t)
+ '(org-agenda-files
+   (quote
+    ("~/documentation/organizor.org" "~/documentation/ergobasen/notes.org")))
  '(package-selected-packages
    (quote
-    (helm company use-package projectile magit gruvbox-theme evil counsel))))
+    (json-mode helm company use-package projectile magit gruvbox-theme evil counsel))))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
