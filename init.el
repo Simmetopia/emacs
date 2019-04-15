@@ -21,10 +21,6 @@
 (when (memq window-system '(mac ns x))
   (exec-path-from-shell-initialize))
 (use-package company :ensure t)
-(use-package web-mode
-  :config
-  (define-derived-mode typescript-tsx-mode web-mode "TypeScript-tsx")
-  (add-to-list 'auto-mode-alist '("\\.tsx\\'" . typescript-tsx-mode)))
 (use-package typescript-mode :ensure t)
 (use-package lsp-mode
   :ensure t
@@ -32,10 +28,32 @@
   :init (lsp)
   :config
   (require 'lsp-clients)
-  (add-hook 'typescript-mode-hook 'lsp) ;; for typescript support
-  (add-hook 'typescript-tsx-mode-hook 'lsp) ;; for typescript support
 )
+(use-package flycheck :ensure t)
 
+(use-package web-mode :ensure t)
+(use-package tide :ensure t)
+(defun setup-tide-mode ()
+  (interactive)
+  (tide-setup)
+  (flycheck-mode +1)
+  (setq flycheck-check-syntax-automatically '(save mode-enabled))
+  (eldoc-mode +1)
+  (tide-hl-identifier-mode +1)
+  ;; company is an optional dependency. You have to
+  ;; install it separately via package-install
+  ;; `M-x package-install [ret] company`
+  (company-mode +1))
+;; aligns annotation to the right hand side
+(setq company-tooltip-align-annotations t)
+(require 'web-mode)
+(add-to-list 'auto-mode-alist '("\\.tsx\\'" . web-mode))
+(add-hook 'web-mode-hook
+          (lambda ()
+            (when (string-equal "tsx" (file-name-extension buffer-file-name))
+              (setup-tide-mode))))
+;; enable typescript-tslint checker
+(flycheck-add-mode 'typescript-tslint 'web-mode)
 (use-package lsp-ui
   :ensure t
   :commands lsp-ui-mode
@@ -66,9 +84,8 @@
 (use-package evil :ensure t)
 (evil-mode 1)
 (use-package org
-  :ensure t
-  :init (org-indent-mode)
-  )
+  :ensure t)
+(org-indent-mode 1)
 (use-package helm :ensure t)
 (helm-mode 1)
 (global-set-key (kbd "M-x") 'helm-M-x)
@@ -98,12 +115,11 @@
   :ensure t
   :config
   (projectile-mode 1))
-  
 (use-package counsel :ensure t)
 (use-package prettier-js :ensure t)
 ;; load keybinds
 (load "~/.emacs.d/keybinds.el")
-
+(add-hook 'org-mode-hook 'org-indent-mode)
 (display-line-numbers-mode 1)
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
@@ -113,7 +129,7 @@
  '(inhibit-startup-screen t)
  '(org-agenda-files
    (quote
-    ("~/documentation/organizor.org" "~/documentation/ergobasen/notes.org")))
+    ("~/documentation/it-minds/organizor.org" "~/documentation/organizor.org" "~/documentation/ergobasen/notes.org")))
  '(package-selected-packages
    (quote
     (json-mode helm company use-package projectile magit gruvbox-theme evil counsel))))
