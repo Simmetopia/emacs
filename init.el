@@ -20,6 +20,7 @@
 (use-package exec-path-from-shell :ensure t)
 (when (memq window-system '(mac ns x))
   (exec-path-from-shell-initialize))
+(global-linum-mode t)
 (use-package company :ensure t)
 (use-package typescript-mode :ensure t)
 (use-package lsp-mode
@@ -46,7 +47,6 @@
   (company-mode +1))
 ;; aligns annotation to the right hand side
 (setq company-tooltip-align-annotations t)
-(require 'web-mode)
 (add-to-list 'auto-mode-alist '("\\.tsx\\'" . web-mode))
 (add-hook 'web-mode-hook
           (lambda ()
@@ -120,7 +120,6 @@
 ;; load keybinds
 (load "~/.emacs.d/keybinds.el")
 (add-hook 'org-mode-hook 'org-indent-mode)
-(display-line-numbers-mode 1)
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.

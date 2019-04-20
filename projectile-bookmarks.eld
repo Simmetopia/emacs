@@ -1,1 +1,1 @@
-("~/.emacs.d/" "~/" "~/typescript_code/timemindster/" "~/typescript_code/time-mindster/" "~/brandheroes/brandheroesapp/" "~/brandheroes/brandheroes-shared-project/" "~/brandheroes/brandheroes-webapp-v2/")
+("~/.emacs.d/" "~/" "~/brandheroes/brandheroes-webapp-v2/" "~/typescript_code/timemindster/" "~/typescript_code/nvim-typescript/" "~/brandheroes/brandheroesapp/" "~/typescript_code/time-mindster/" "~/brandheroes/brandheroes-shared-project/")
