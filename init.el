@@ -20,7 +20,10 @@
 (use-package exec-path-from-shell :ensure t)
 (when (memq window-system '(mac ns x))
   (exec-path-from-shell-initialize))
+
 (global-linum-mode t)
+
+
 (use-package company :ensure t)
 (use-package web-mode
   :config
@@ -37,31 +40,6 @@
   (add-hook 'typescript-tsx-mode-hook 'lsp) ;; for typescript support
 )
 
-<<<<<<< HEAD
-(use-package web-mode :ensure t)
-(use-package tide :ensure t)
-(defun setup-tide-mode ()
-  (interactive)
-  (tide-setup)
-  (flycheck-mode +1)
-  (setq flycheck-check-syntax-automatically '(save mode-enabled))
-  (eldoc-mode +1)
-  (tide-hl-identifier-mode +1)
-  ;; company is an optional dependency. You have to
-  ;; install it separately via package-install
-  ;; `M-x package-install [ret] company`
-  (company-mode +1))
-;; aligns annotation to the right hand side
-(setq company-tooltip-align-annotations t)
-(add-to-list 'auto-mode-alist '("\\.tsx\\'" . web-mode))
-(add-hook 'web-mode-hook
-          (lambda ()
-            (when (string-equal "tsx" (file-name-extension buffer-file-name))
-              (setup-tide-mode))))
-;; enable typescript-tslint checker
-(flycheck-add-mode 'typescript-tslint 'web-mode)
-=======
->>>>>>> parent of 68552fd... Added tide instead og lsp-emacs
 (use-package lsp-ui
   :ensure t
   :commands lsp-ui-mode
@@ -129,12 +107,8 @@
 (use-package prettier-js :ensure t)
 ;; load keybinds
 (load "~/.emacs.d/keybinds.el")
-<<<<<<< HEAD
 (add-hook 'org-mode-hook 'org-indent-mode)
-=======
 
-(display-line-numbers-mode 1)
->>>>>>> parent of 68552fd... Added tide instead og lsp-emacs
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
