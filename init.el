@@ -22,6 +22,10 @@
   (exec-path-from-shell-initialize))
 (global-linum-mode t)
 (use-package company :ensure t)
+(use-package web-mode
+  :config
+  (define-derived-mode typescript-tsx-mode web-mode "TypeScript-tsx")
+  (add-to-list 'auto-mode-alist '("\\.tsx\\'" . typescript-tsx-mode)))
 (use-package typescript-mode :ensure t)
 (use-package lsp-mode
   :ensure t
@@ -29,9 +33,11 @@
   :init (lsp)
   :config
   (require 'lsp-clients)
+  (add-hook 'typescript-mode-hook 'lsp) ;; for typescript support
+  (add-hook 'typescript-tsx-mode-hook 'lsp) ;; for typescript support
 )
-(use-package flycheck :ensure t)
 
+<<<<<<< HEAD
 (use-package web-mode :ensure t)
 (use-package tide :ensure t)
 (defun setup-tide-mode ()
@@ -54,6 +60,8 @@
               (setup-tide-mode))))
 ;; enable typescript-tslint checker
 (flycheck-add-mode 'typescript-tslint 'web-mode)
+=======
+>>>>>>> parent of 68552fd... Added tide instead og lsp-emacs
 (use-package lsp-ui
   :ensure t
   :commands lsp-ui-mode
@@ -84,8 +92,9 @@
 (use-package evil :ensure t)
 (evil-mode 1)
 (use-package org
-  :ensure t)
-(org-indent-mode 1)
+  :ensure t
+  :init (org-indent-mode)
+  )
 (use-package helm :ensure t)
 (helm-mode 1)
 (global-set-key (kbd "M-x") 'helm-M-x)
@@ -115,11 +124,17 @@
   :ensure t
   :config
   (projectile-mode 1))
+  
 (use-package counsel :ensure t)
 (use-package prettier-js :ensure t)
 ;; load keybinds
 (load "~/.emacs.d/keybinds.el")
+<<<<<<< HEAD
 (add-hook 'org-mode-hook 'org-indent-mode)
+=======
+
+(display-line-numbers-mode 1)
+>>>>>>> parent of 68552fd... Added tide instead og lsp-emacs
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
@@ -128,7 +143,7 @@
  '(inhibit-startup-screen t)
  '(org-agenda-files
    (quote
-    ("~/documentation/it-minds/organizor.org" "~/documentation/organizor.org" "~/documentation/ergobasen/notes.org")))
+    ("~/documentation/organizor.org" "~/documentation/ergobasen/notes.org")))
  '(package-selected-packages
    (quote
     (json-mode helm company use-package projectile magit gruvbox-theme evil counsel))))
